@@ -1,0 +1,96 @@
+/* Reset default margins and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling: background color, font, and centering */
+body {
+    font-family: Arial, sans-serif; /* Simple, readable font */
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark text for contrast */
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+/* Container for the entire app: max width, padding, and shadow */
+.container {
+    max-width: 600px; /* Limit width for readability */
+    width: 100%;
+    background-color: white; /* White background for content */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text inside */
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px; /* Space below the main title */
+    color: #007bff; /* Blue color for the title */
+}
+
+/* Form styling: flex layout for input and button */
+#weather-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    gap: 10px; /* Space between elements */
+    margin-bottom: 20px;
+}
+
+/* Label styling */
+label {
+    font-weight: bold; /* Make label bold */
+}
+
+/* Input field styling */
+#city-input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Readable font size */
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px;
+    transition: background-color 0.3s; /* Smooth color change on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Weather display section: initially hidden */
+#weather-display {
+    margin-top: 20px;
+}
+
+/* Hide elements with this class */
+.hidden {
+    display: none;
+}
+
+/* Styling for weather info paragraphs */
+#weather-display p {
+    margin: 10px 0; /* Space between paragraphs */
+    font-size: 18px; /* Larger font for readability */
+}
+
+/* Error message styling: red text for visibility */
+#error-message {
+    color: red;
+    margin-top: 20px;
+    font-weight: bold;
+}
